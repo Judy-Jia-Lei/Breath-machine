@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>优畅溪</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <link rel="stylesheet" href="lightbox.min.css">
+      
+        <script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
+        
+        <link rel="stylesheet" href="jquery.fancybox.css">
+      
+        <script type="text/javascript" src="jquery.fancybox.js"></script>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        
+        <style>
+
+            .selector-for-some-widget {box-sizing: content-box;}
+            .padding-64 {padding:64px 0px}
+            .padding-top-64 {padding-top:64px}
+            .center {text-align: center!important}
+            .opacity {opacity: 0.7}
+            .hover-black:hover {color:black!important}
+            .text-font {letter-spacing: 2px; font-weight:bolder;font-size:18px;!important}
+            .bgimg {
+                background-image:url(breath-machine-image/customer-sm.jpg);
+                background-attachment: fixed;
+                background-size:cover;
+                background-repeat:no-repeat;
+                background-position:center;
+                position:relative;
+            }
+            
+            #fixed-logo {position:fixed;top:40%;left:4%;z-index: 1!important;width:30px;}
+            #fixed-logo2 {position:fixed;top:46%;left:1.5%;z-index: 1!important;width:30px;}
+                    
+            .relative-p {position: relative!important}
+            .hover-gray:hover {filter:grayscale(30%)}
+            
+            /*display middle*/
+            .display-middle {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}
+            .letter-spacing{letter-spacing:20px}
+            .xxlarge {font-size: 60px}
+            
+            /*Multiple item carousel, advance 1 slide at a time*/
+            .carousel-inner .carousel-item.active,.carousel-inner .carousel-item-next,.carousel-inner .carousel-item-prev {display: flex;}
+            .carousel-inner .carousel-item-right.active,.carousel-inner .carousel-item-next {transform: translateX(25%);}
+            .carousel-inner .carousel-item-left.active, .carousel-inner .carousel-item-prev {transform: translateX(-25%);}
+            .carousel-inner .carousel-item-right,.carousel-inner .carousel-item-left{transform: translateX(0);}
+            
+            @media (max-width:700px) {.hide-small {display:none!important};}
+            
+            @media (max-width:992px) and (min-width:701px) {.hide-medium {display:none!important}}
+            
+            @media (min-width:993px) {.hide-large {display:none!important}}
+            
+        </style>
+
+
+    </head>
+
+    <body>
+
+        <!--Questions: 
+1.我接下来制作单品页面；
+你需要抽空确定的事情：
+1.商定好你们产品的价格。目前你们提供的价格没有比京东，天猫便宜。
+2.赠品：消毒宝，管道等的图片需要确认是否和实际赠送物品的图片一致；
+3.服务：所列取的赠送服务是否都能提供，需要确认一下；
+4.终身还是终生？
+
+-->
+<!--NavBar-->
+    
+        <!--<div id="welcome" style="height:30px;background-color:#F8F9FA;border-bottom:1px solid white" class="text-center"><p class="text-muted"><small>欢迎来到旭虹电子有限公司</small></p></div>
+        
+        <img id="fixed-logo" src="breath-machine-image/logo.jpg">
+        <img id="fixed-logo2" src="hostel-image/logo1.jpg" class="hide-small">-->
+        
+<!--Navbar-->   
+        <!--
+        <nav class="fixed-top navbar navbar-expand-md navbar-dark bg-primary opacity">
+            <div class="container">
+                <a href="/" class="navbar-brand">旭虹电子</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar4">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbar4">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">主页 <span class="sr-only">Home</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d-none d-md-block" href="#product">产品</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">联系</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        -->
+        
+        <nav class="fixed-top navbar navbar-expand-md navbar-dark bg-primary opacity">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar10">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbar10">
+                    <ul class="navbar-nav nav-fill w-100">
+                        <li class="nav-item hover-black">
+                            <a data-fancybox data-type="iframe" data-src="contact.html" href="javascript:;" class="nav-link hover-white text-font">客服</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link hover-white text-font" href="#hot-sale">热卖</a>
+                        </li>
+                        <li class="nav-item">
+                            <h4 class="hide-small navbar-brand">优畅溪</h4>
+                        </li>
+                        <li class="nav-item">
+                            <a data-fancybox data-type="iframe" data-src="contact.html" href="javascript:;" class="nav-link hover-white text-font">咨询</a>
+                        </li>
+                        <li class="nav-item">
+                            <a data-fancybox data-type="iframe" data-src="contact.html" href="javascript:;" class="nav-link hover-white text-font">微信</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+<!--Banner-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="z-index: 2">
+
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img class="d-block w-100" src="breath-machine-image/banner-1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="breath-machine-image/banner-4.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="breath-machine-image/banner-3.jpg" alt="Third slide">
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        
+        
+<!--PC-公司/产品介绍-->  
+        <div class="container text-center padding-top-64 d-none d-md-block">   
+            <div class="row">
+                <div class="col-sm-3">
+                    <h2><small>睡眠呼吸暂停症状</small></h2>
+                    <dl>
+                        <dd><i class="fa fa-tired"></i> 反复憋醒，夜眠不宁</dd>
+                        <dd><i class="far fa-tired"></i> 夜间频尿，清晨头痛</dd>
+                        <dd><i class="fas fa-frown-open"></i> 睡眠不够，白天嗜睡</dd>
+                        <dd><i class="far fa-sad-cry"></i> 迟钝忧郁，易怒焦虑</dd>
+                        <dd><i class="fas fa-meh-blank"></i> 注意力不集中，健忘</dd>
+                    </dl> 
+                </div>
+                <div class="col-sm-6">
+                    <h2><small>呼吸机/手术优势对比</small></h2>
+                    <table class="table table-borderless table-sm">
+                        <tr>
+                          <td class="align-middle">通过高速气流使得<br>气道处于开放状态</td>
+                          <th class="align-middle text-white bg-primary font-weight-bold opacity">方式</th>
+                          <td>通过割除松弛肌肉部分<br>保持气道通畅</td>
+                        </tr>
+                        <tr>
+                          <td class="align-middle">轻重各类打鼾类型</td>
+                          <th class="align-middle text-white bg-primary font-weight-bold opacity">人群</th>
+                          <td class="align-middle">重度打鼾人群</td>
+                        </tr>
+                        <tr>
+                          <td class="align-middle">长期佩戴，彻底解决打鼾症状</td>
+                          <th class="align-middle text-white bg-primary font-weight-bold opacity">效果</th>
+                          <td>短期见效，2-3年易复发</td>
+                        </tr>
+                        <tr>
+                          <td class="align-middle">物理治疗，外部佩戴，无安全隐患</td>
+                          <th class="align-middle text-white bg-primary font-weight-bold opacity">安全</th>
+                          <td>手术风险大，易出现并发后遗症</td>
+                        </tr>  
+                    </table>
+                </div>
+                <div class="col-sm-3 pb-5">
+                    <h2><small>长期打鼾引发的疾病</small></h2>
+                    <dl> 
+                        <dd>高血压，糖尿病，脑出血</dd>
+                        <dd>心绞痛，冠心病，肥胖症</dd>
+                        <dd>夜间低血氧，内分泌失调</dd>
+                        <dd>心率不齐，前列腺炎</dd>
+                        <dd>心衰，脑梗，腔梗</dd>
+                    </dl> 
+                </div>
+            </div>
+        </div>
+<!--Mobile-公司/产品介绍--> 
+        <div class="product container text-center d-block d-md-none pt-4 pb-4">   
+            <div class="row">
+                <div class="col-6">
+                    <h4 class="text-white bg-primary opacity rounded"><small>睡眠呼吸暂停症状</small></h4>
+                    <dl>
+                        <dd><i class="fa fa-tired"></i> 反复憋醒，夜眠不宁</dd>
+                        <dd><i class="far fa-tired"></i> 夜间频尿，清晨头痛</dd>
+                        <dd><i class="fas fa-frown-open"></i> 睡眠不够，白天嗜睡</dd>
+                        <dd><i class="far fa-sad-cry"></i> 迟钝忧郁，易怒焦虑</dd>
+                        <dd><i class="fas fa-meh-blank"></i> 注意力不集中，健忘</dd>
+                    </dl> 
+                </div>
+                <div class="col-6">
+                    <h4 class="text-white bg-primary opacity rounded"><small>长期打鼾引发的病</small></h4>
+                    <dl> 
+                        <dd>高血压,糖尿病,脑出血</dd>
+                        <dd>心绞痛,冠心病,肥胖症</dd>
+                        <dd>夜间低血氧,内分泌失调</dd>
+                        <dd>心率不齐,前列腺炎</dd>
+                        <dd>心衰,脑梗,腔梗</dd>
+                    </dl> 
+                </div>
+            </div>
+            <div class="col">
+                <h4 class="text-white bg-primary opacity rounded"><small>呼吸机/手术优势对比</small></h4>
+                <table class="table table-borderless table-sm">
+                    <tr>
+                        <td class="align-middle">通过高速气流使得<br>气道处于开放状态</td>
+                        <th class="align-middle text-white bg-primary font-weight-bold opacity">方式</th>
+                        <td>通过割除松弛肌肉<br>部分保持气道通畅</td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">轻重各类打鼾类型</td>
+                        <th class="align-middle text-white bg-primary font-weight-bold opacity">人群</th>
+                        <td class="align-middle">重度打鼾人群</td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">长期佩戴<br>彻底解决打鼾症状</td>
+                        <th class="align-middle text-white bg-primary font-weight-bold opacity">效果</th>
+                        <td>短期见效<br>2-3年易复发</td>
+                    </tr>
+                    <tr>
+                        <td class="align-middle">物理治疗，外部佩戴，无安全隐患</td>
+                        <th class="align-middle text-white bg-primary font-weight-bold opacity">安全</th>
+                        <td>手术风险大，易出现并发后遗症</td>
+                    </tr>  
+                </table>
+            </div>
+        </div>
+        
+<!--PC-热卖产品对比--> 
+        <div class="container text-center pt-1 d-none d-md-block">
+            <div class="mx-auto"  style="max-width:280px">
+                <h3 class="d-block center text-white bg-primary opacity rounded p-2">为你选择，热卖产品</h3>
+                <p class="center text-muted"><em>点击产品大图 <br>查看更多详细信息</em></p><br>
+            </div>
+            <div id="hot-sale" class="container">
+                <table class="table table-bordered center">
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="align-middle bg-primary text-white opacity" style="width:6%">产品图片</th>
+                        <!--S9 Auto Set-->
+                            <td style="width:18.8%">
+                                <a href="breath-machine-image/resmed-S9-Auto-Set-1.jpg" data-fancybox="images-preview-R1" data-width="1000" data-height="1000" data-thumbs='{"autoStart":true}'><img id="im-l-1" class="card-img-top display-image" src="breath-machine-image/resmed-S9-Auto-Set-1.jpg"  alt="resmed-S9-Auto-Set"></a> 
+                                
+                                <div id="carouselExampleControls-R1" class="carousel slide" data-ride="carousel">
+                                    <!--
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleControls-R1" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleControls-R1" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleControls-R1" data-slide-to="2"></li>
+                                    </ol>-->
+                                    <div class="carousel-inner d-none d-sm-block d-md-block d-lg-block">
+                                        <div class="carousel-item active">
+                                            <div class="container text-center my-3">
+                                                <div class="row mx-auto my-auto w-100 no-gutters">
+                                                    <div class="col-3">
+                                                        <img class="d-block img-fluid" src="breath-machine-image/resmed-S9-Auto-Set-1-sm.jpg" alt="resmed-S9-Auto-Set">
+                                                    </div>
+                                                    <div id="img-sm-2" class="col-3">
+                                                        <img class="d-block img-fluid" src="breath-machine-image/resmed-S9-Auto-Set-2-sm.jpg" alt="resmed-S9-Auto-Set">       
+                                                    </div> 
+                                                    <div class="col-3">
+                                                        <img class="d-block img-fluid" src="breath-machine-image/resmed-S9-Auto-Set-3-sm.jpg" alt="resmed-S9-Auto-Set">
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <img class="d-block img-fluid" src="breath-machine-image/resmed-S9-Auto-Set-4-sm.jpg" alt="resmed-S9-Auto-Set">
+                                                    </div>
+                                                </div>                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--
+                                    <a class="carousel-control-prev" href="#carouselExampleControls-R1" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls-R1" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a> --> 
+                                </div>
+                            </td>
+                            
+                            <!--大图-->
+                        
+                            <div style="display: none;">
+                                  <a href="breath-machine-image/resmed-S9-Auto-Set-1.jpg" data-fancybox="images-preview-R1" 
+                                     data-width="1000" data-height="1000"
+                                     data-thumb="breath-machine-image/resmed-S9-Auto-Set-1-sm.jpg"></a>
+
+                                  <a href="breath-machine-image/resmed-S9-Auto-Set-2.jpg" data-fancybox="images-preview-R1" 
+                                     data-width="1000" data-height="1000"
+                                     data-thumb="breath-machine-image/resmed-S9-Auto-Set-2-sm.jpg"></a>
+
+                                  <a href="breath-machine-image/resmed-S9-Auto-Set-3.jpg" data-fancybox="images-preview-R1" 
+                                     data-width="1000" data-height="1000"
+                                     data-thumb="breath-machine-image/resmed-S9-Auto-Set-3-sm.jpg"></a>
+
+                                  <a href="breath-machine-image/resmed-S9-Auto-Set-4.jpg" data-fancybox="images-preview-R1" 
+                                     data-width="1242" data-height="1674"
+                                     data-thumb="breath-machine-image/resmed-S9-Auto-Set-4-sm.jpg"></a>
+                            </div>
+                            
+                        <!--S9 Escape Auto-->
+                            <td style="width:18.8%">
+                                <a href="breath-machine-image/resmed-S9-Escape-Auto-1.jpg" data-fancybox="images-preview-R2" data-width="1000" data-height="1000" data-thumbs='{"autoStart":true}'><img class="card-img-top w-100" src="breath-machine-image/resmed-S9-Escape-Auto-1.jpg" alt="resmed-S9-Escape-Auto"></a> 
+                                
+                                <div id="carouselExampleControls-R2" class="carousel slide" data-ride="carousel">
+                                    <!--
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleControls-R2" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleControls-R2" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleControls-R2" data-slide-to="2"></li>
+                                    </ol>-->
+                                    <div class="carousel-inner d-none d-sm-block d-md-block d-lg-block">
+                                        <div class="carousel-item active">    
+                                            <div class="text-center my-3">
+                                                <div class="row mx-auto my-auto w-100 no-gutters">
+                                                    <div class="col-3">
+                                                        <img class="d-block img-fluid" src="breath-machine-image/resmed-S9-Escape-Auto-1-sm.jpg" alt="resmed-S9-Escape-Auto">
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <img class="d-block img-fluid" src="breath-machine-image/resmed-S9-Escape-Auto-2-sm.jpg" alt="resmed-S9-Escape-Auto">       
+                                                    </div> 
+                                                    <div class="col-3">
+                                                        <img class="d-block img-fluid" src="breath-machine-image/resmed-S9-Escape-Auto-3-sm.jpg" alt="resmed-S9-Escape-Auto">
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <img class="d-block img-fluid" src="breath-machine-image/resmed-S9-Escape-Auto-5-sm.jpg" alt="resmed-S9-Escape-Auto">
+                                                    </div>
+                                                </div>                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--
+                                    <a class="carousel-control-prev" href="#carouselExampleControls-R2" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls-R2" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a> --> 
+                                </div>
+                            </td>
+                            <!--大图-->
+                            <div style="display: none;">
+                                  <a href="breath-machine-image/resmed-S9-Escape-Auto-1.jpg" data-fancybox="images-preview-R2" 
+                                     data-width="1000" data-height="1000"
+                                     data-thumb="breath-machine-image/resmed-S9-Escape-Auto-1-sm.jpg"></a>
+
+                                  <a href="breath-machine-image/resmed-S9-Escape-Auto-2.jpg" data-fancybox="images-preview-R2" 
+                                     data-width="1000" data-height="1000"
+                                     data-thumb="breath-machine-image/resmed-S9-Escape-Auto-2-sm.jpg"></a>
+
+                                  <a href="breath-machine-image/resmed-S9-Escape-Auto-3.jpg" data-fancybox="images-preview-R2" 
+                                     data-width="1000" data-height="1000"
+                                     data-thumb="breath-machine-image/resmed-S9-Escape-Auto-3-sm.jpg"></a>
+
+                                  <a href="breath-machine-image/resmed-S9-Escape-Auto-5.jpg" data-fancybox="images-preview-R2" 
+                                     data-width="1242" data-height="1674"
+                                     data-thumb="breath-machine-image/resmed-S9-Escape-Auto-5-sm.jpg"></a>
+                            </div>
+                            
+                        <!--uwish-->
+                            <td style="width:18.8%">
+                                <a href="breath-machine-image/uwish-1.jpeg" data-fancybox="images-preview-UW1" data-width="1000" data-height="1000" data-thumbs='{"autoStart":true}'><img class="card-img-top w-100" src="breath-machine-image/uwish-1.jpeg"  alt="uwish"></a>  
+                                <div id="carouselExampleControls-UW1" class="carousel slide" data-ride="carousel">
+                                    <!--
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleControls-UW1" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleControls-UW1" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleControls-UW1" data-slide-to="2"></li>
+                                    </ol>-->
+                                    <div class="carousel-inner d-none d-sm-block d-md-block d-lg-block">
+                                        <div class="carousel-item active">    
+                                            <div class="text-center my-3">
+                                                <div class="row no-gutters">
+                                                    <div class="col-3">
+                                                        <img class="d-block w-100 img-fluid" src="breath-machine-image/uwish-1-sm.jpg">
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <img class="d-block w-100 img-fluid" src="breath-machine-image/uwish-2-sm.jpg">       
+                                                    </div> 
+                                                    <div class="col-3">
+                                                        <img class="d-block w-100 img-fluid" src="breath-machine-image/uwish-3-sm.jpg">
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <img class="d-block w-100 img-fluid" src="breath-machine-image/uwish-4-sm.jpg">
+                                                    </div>
+                                                </div>                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--
+                                    <a class="carousel-control-prev" href="#carouselExampleControls-UW1" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls-UW1" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a> -->
+                                </div>
+                            </td>
+                            <!--大图-->
+                            <div style="display: none;">
+                                  <a href="breath-machine-image/uwish-1.jpeg" data-fancybox="images-preview-UW1" 
+                                     data-width="1000" data-height="1000"
+                                     data-thumb="breath-machine-image/uwish-1-sm.jpg"></a>
+
+                                  <a href="breath-machine-image/uwish-2.jpg" data-fancybox="images-preview-UW1" 
+                                     data-width="1000" data-height="1000"
+                                     data-thumb="breath-machine-image/uwish-2-sm.jpg"></a>
+
+                                  <a href="breath-machine-image/uwish-3.jpg" data-fancybox="images-preview-UW1" 
+                                     data-width="1000" data-height="1000"
+                                     data-thumb="breath-machine-image/uwish-3-sm.jpg"></a>
+
+                                  <a href="breath-machine-image/uwish-4.jpg" data-fancybox="images-preview-UW1" 
+                                     data-width="1242" data-height="1674"
+                                     data-thumb="breath-machine-image/uwish-4-sm.jpg"></a>
+                            </div>
+                        
+                            
+                        <!--futong-->
+                            <td style="width:18.8%">
+                                <a href="breath-machine-image/futong-1.jpg" data-fancybox="images-preview-FT1" data-width="1000" data-height="1000" data-thumbs='{"autoStart":true}'><img class="card-img-top w-100" src="breath-machine-image/futong-1.jpg"  alt="futong"></a>  
+                                <div id="carouselExampleControls-UW1" class="carousel slide" data-ride="carousel">
+                                    <!--<ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleControls-FT1" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleControls-FT1" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleControls-FT1" data-slide-to="2"></li>
+                                    </ol>-->
+                                    <div class="carousel-inner d-none d-sm-block d-md-block d-lg-block">
+                                        <div class="carousel-item active"> 
+                                            <div class="text-center my-3">
+                                                <div class="row no-gutters">
+                                                    <div class="col-3">
+                                                        <img class="d-block w-100 img-fluid" src="breath-machine-image/futong-1-sm.jpg">
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <img class="d-block w-100 img-fluid" src="breath-machine-image/futong-2-sm.jpg">       
+                                                    </div> 
+                                                    <div class="col-3">
+                                                        <img class="d-block w-100 img-fluid" src="breath-machine-image/futong-3-sm.jpg">
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <img class="d-block w-100 img-fluid" src="breath-machine-image/futong-4-sm.jpg">
+                                                    </div>
+                                                </div>                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--
+                                    <a class="carousel-control-prev" href="#carouselExampleControls-FT1" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls-FT1" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a> -->
+                                </div>
+                            </td>
+                            
+                            <!--大图-->
+                            <div style="display: none;">
+                                  <a href="breath-machine-image/futong-1.jpg" data-fancybox="images-preview-FT1" 
+                                     data-width="1000" data-height="1000"
+                                     data-thumb="breath-machine-image/futong-1-sm.jpg"></a>
+
+                                  <a href="breath-machine-image/futong-2.jpg" data-fancybox="images-preview-FT1" 
+                                     data-width="1000" data-height="1000"
+                                     data-thumb="breath-machine-image/futong-2-sm.jpg"></a>
+
+                                  <a href="breath-machine-image/futong-3.jpg" data-fancybox="images-preview-FT1" 
+                                     data-width="1000" data-height="1000"
+                                     data-thumb="breath-machine-image/futong-3-sm.jpg"></a>
+
+                                  <a href="breath-machine-image/futong-4.jpg" data-fancybox="images-preview-FT1" 
+                                     data-width="1242" data-height="1674"
+                                     data-thumb="breath-machine-image/futong-4-sm.jpg"></a>
+                            </div>
+                            
+                        <!--yuyue-->
+                            <td style="width:18.8%">
+                                <a href="breath-machine-image/YH-580-1.jpg" data-fancybox="images-preview-YH1" data-width="1000" data-height="1000" data-thumbs='{"autoStart":true}'><img class="card-img-top w-100" src="breath-machine-image/YH-580-1.jpg"  alt="futong"></a>  
+                                <div id="carouselExampleControls-YH1" class="carousel slide" data-ride="carousel">
+                                    <!--<ol class="carousel-indicators">
+                                        <li data-target="#carouselExampleControls-YH1" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleControls-YH1" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleControls-YH1" data-slide-to="2"></li>
+                                    </ol>-->
+                                    <div class="carousel-inner d-none d-sm-block d-md-block d-lg-block">
+                                        <div class="carousel-item active">             
+                                            <div class="text-center my-3">
+                                                <div class="row no-gutters">
+                                                    <div class="col-3">
+                                                        <img class="d-block w-100 img-fluid" src="breath-machine-image/YH-580-1-sm.jpg">
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <img class="d-block w-100 img-fluid" src="breath-machine-image/YH-580-2-sm.jpg">       
+                                                    </div> 
+                                                    <div class="col-3">
+                                                        <img class="d-block w-100 img-fluid" src="breath-machine-image/YH-580-3-sm.jpg">
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <img class="d-block w-100 img-fluid" src="breath-machine-image/YH-580-4-sm.jpg">
+                                                    </div>
+                                                </div>                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--
+                                    <a class="carousel-control-prev" href="#carouselExampleControls-FT1" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls-FT1" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a> -->
+                                </div>
+                            </td>
+                            <!--大图-->
+                            <div style="display: none;">
+                                  <a href="breath-machine-image/YH-580-1.jpg" data-fancybox="images-preview-YH1" 
+                                     data-width="1000" data-height="1000"
+                                     data-thumb="breath-machine-image/YH-580-1-sm.jpg"></a>
+
+                                  <a href="breath-machine-image/YH-580-2.jpg" data-fancybox="images-preview-YH1" 
+                                     data-width="1000" data-height="1000"
+                                     data-thumb="breath-machine-image/YH-580-2-sm.jpg"></a>
+
+                                  <a href="breath-machine-image/YH-580-3.jpg" data-fancybox="images-preview-YH1" 
+                                     data-width="1000" data-height="1000"
+                                     data-thumb="breath-machine-image/YH-580-3-sm.jpg"></a>
+
+                                  <a href="breath-machine-image/YH-580-4.jpg" data-fancybox="images-preview-YH1" 
+                                     data-width="1242" data-height="1674"
+                                     data-thumb="breath-machine-image/YH-580-4-sm.jpg"></a>
+                            </div>
+                        </tr>
+                        
+
+                        <tr>
+                            <th scope="row" class="align-middle bg-primary text-white opacity" style="width:6%">品牌</th>
+                            <th scope="col" class="align-middle">Resmed 瑞思迈</th>
+                            <th scope="col" class="align-middle">Resmed 瑞思迈</th>
+                            <th scope="col" class="align-middle">优伟</th>
+                            <th scope="col" class="align-middle">福通</th>
+                            <th scope="col" class="align-middle">鱼跃</th>
+                        </tr>
+
+                        <tr>
+                            <th scope="row" class="align-middle bg-primary text-white opacity" style="width:6%">型号</th>
+                            <td class="align-middle">S9 Auto Set</td>
+                            <td class="align-middle">S9 Escape Auto</td>
+                            <td class="align-middle">CP1</td>
+                            <td class="align-middle">Auto CPAP</td>
+                            <td class="align-middle">YH-580</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="align-middle bg-primary text-white opacity" style="width:6%">产地</th>
+                            <td class="align-middle">澳大利亚</td>
+                            <td class="align-middle">澳大利亚</td>
+                            <td class="align-middle">台湾</td>
+                            <td class="align-middle">德国</td>
+                            <td class="align-middle">中国</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="align-middle bg-primary text-white opacity" style="width:6%">价格比较</th>
+                            <td class="align-middle">京东：9800<br>天猫：9800<br>官网：11800<br>终端价：11800</td>
+                            <td class="align-middle">京东：9800<br>天猫：9500<br>官网：7800<br>终端价：7800</td>
+                            <td class="align-middle">京东：/<br>天猫：/<br>官网：5800<br>终端价：5800</td>
+                            <td class="align-middle">京东：3980<br>天猫：/<br>官网：4380<br>终端价：4800</td>
+                            <td class="align-middle">京东：/<br>天猫：5800<br>官网：4100<br>终端价：4000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="align-middle bg-primary text-white opacity" style="width:6%">推荐选择</th>
+                            <td class="align-middle">所有打鼾者<br>更好舒适性</td>
+                            <td class="align-middle">性价比高<br>自动调压</td>
+                            <td class="align-middle">自动调压，国产价格<br>进口品质，原厂采购</td>
+                            <td class="align-middle">老牌经典</td>
+                            <td class="align-middle">国产优质品牌</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="align-middle bg-primary text-white opacity" style="width:6%">运行模式</th>
+                            <td class="align-middle">单水平<br><a href="#" title="什么是全自动？" data-toggle="popover" data-trigger="hover" data-content="全自动指的是智能识别气道塌陷程度，自动调节压力。<br>呼吸机通过传感器探测气道的塌陷程度，如果塌陷严重就调高风压，如果没有塌陷就调低风压。总是用一个比较舒适的风压维持气道的开放。" data-html="true">全自动</a></td>
+                            <td class="align-middle">单水平<br>半自动</td>
+                            <td class="align-middle">单水平<br>半自动</td>
+                            <td class="align-middle">单水平<br>全自动</td>
+                            <td class="align-middle">单水平<br>全自动</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="align-middle bg-primary text-white opacity" style="width:6%">压力模式</th>
+                            <td class="align-middle"><a href="#" title="什么是CPAP？" data-toggle="popover" data-trigger="hover" data-content="CPAP指的是持续正压通气。<br>呼吸机提供一个恒定的风压，这个风压能够维持气道开放，减少呼吸暂停的发生。" data-html="true">CPAP</a><br>Auto Set</td>
+                            <td class="align-middle">CPAP<br><a href="#" title="什么是APCP？" data-toggle="popover" data-trigger="hover" data-content="APAP指的是自动调压" data-html="true">APAP</a></td>
+                            <td class="align-middle">CPAP</td>
+                            <td class="align-middle">CPAP</td>
+                            <td class="align-middle">CPAP</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="align-middle bg-primary text-white opacity" style="width:6%">运行声音</th>
+                            <td class="align-middle"><a href="#" title="20-30分贝" data-toggle="popover" data-trigger="hover" data-content="安静，清风吹拂窗帘<br>让您安心睡眠，不扰家人" data-html="true">噪音&#60 24分⻉</a></td>
+                            <td class="align-middle">噪音&#60 24分⻉</td>
+                            <td class="align-middle">噪⾳&#60 30分⻉</td>
+                            <td class="align-middle">噪⾳&#60 30分⻉</td>
+                            <td class="align-middle">噪⾳&#60 28分⻉</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="align-middle bg-primary text-white opacity" style="width:6%">舒适程度</th>
+                            <td class="align-middle">舒适</td>
+                            <td class="align-middle">正常</td>
+                            <td class="align-middle">正常</td>
+                            <td class="align-middle">舒适</td>
+                            <td class="align-middle">正常</td>
+                        </tr>
+                    </tbody>
+                </table> 
+
+            
+            </div>
+        </div>
+        
+<!--Mobile-热卖产品对比-->
+        <div class="product container text-center d-block d-md-none pt-4 pb-4"> 
+            <div class="mx-auto"  style="max-width:280px">
+                <h4 class="d-block center text-white bg-primary opacity rounded p-2">为你选择，热卖产品</h4>
+                <p class="center text-muted"><em>点击产品大图 <br>查看单品详细信息</em></p><br>
+            </div>
+            <div id="hot-sale" class="container">
+                <table class="table table-bordered center table-sm">
+                    <tbody>
+                        <tr>
+                            <td scope="row" class="align-middle bg-primary text-white opacity" style="width:3%">产品</td>
+                        <!--S9 Auto Set-->
+                            <td style="width:18.8%">
+                                <img class="align-middle card-img-top display-image" src="breath-machine-image/resmed-S9-Auto-Set-1-sm.jpg"  alt="resmed-S9-Auto-Set">  
+                            </td>
+                        <!--S9 Escape Auto-->
+                            <td style="width:18.8%">
+                                <img class="align-middle card-img-top" src="breath-machine-image/resmed-S9-Escape-Auto-1-sm.jpg"  alt="Escape-Auto">  
+                            </td>
+                        <!--uwish-->
+                            <td style="width:18.8%">
+                                <img class="align-middle card-img-top w-100" src="breath-machine-image/uwish-1-sm.jpg"  alt="uwish">  
+                            </td>
+                        <!--futong-->
+                            <td style="width:18.8%">
+                                <img class="align-middle card-img-top w-100" src="breath-machine-image/futong-1-sm.jpg"  alt="futong">  
+                            </td>
+                        <!--yuyue-->
+                            <td style="width:18.8%">
+                                <img class="align-middle card-img-top w-100" src="breath-machine-image/YH-580-1-sm.jpg"  alt="YH-580">  
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <th scope="row" class="align-middle bg-primary text-white opacity" style="width:3%">品牌</th>
+                            <td scope="col" class="align-middle" style="font-size:15px">瑞<br>思迈</td>
+                            <td scope="col" class="align-middle" style="font-size:15px">瑞<br>思迈</td>
+                            <td scope="col" class="align-middle" style="font-size:15px">优伟</td>
+                            <td scope="col" class="align-middle" style="font-size:15px">福通</td>
+                            <td scope="col" class="align-middle" style="font-size:15px">鱼跃</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="align-middle bg-primary text-white opacity" style="width:3%">型号</th>
+                            <td class="align-middle" style="font-size:14px">S9<br>Auto Set</td>
+                            <td class="align-middle" style="font-size:14px">S9 Escape Auto</td>
+                            <td class="align-middle" style="font-size:14px">CP1</td>
+                            <td class="align-middle" style="font-size:14px">Auto CPAP</td>
+                            <td class="align-middle" style="font-size:14px">YH-580</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="align-middle bg-primary text-white opacity" style="width:3%">产地</th>
+                            <td class="align-middle" style="font-size:15px">澳大<br>利亚</td>
+                            <td class="align-middle" style="font-size:15px">澳大<br>利亚</td>
+                            <td class="align-middle" style="font-size:15px">台湾</td>
+                            <td class="align-middle" style="font-size:15px">德国</td>
+                            <td class="align-middle" style="font-size:15px">中国</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="align-middle bg-primary text-white opacity" style="width:3%">价格</th>
+                            <td class="align-middle" style="font-size:15px">京东<br>9800<br>T猫<br>9800<br>官网<br>11800<br>终端价<br>11800</td>
+                            <td class="align-middle" style="font-size:15px">京东<br>9800<br>天猫<br>9500<br>官网<br>7800<br>终端价<br>7800</td>
+                            <td class="align-middle" style="font-size:15px">京东<br>/<br>天猫<br>/<br>官网<br>5800<br>终端价<br>5800</td>
+                            <td class="align-middle" style="font-size:15px">京东<br>3980<br>天猫<br>/<br>官网<br>4380<br>终端价<br>4800</td>
+                            <td class="align-middle" style="font-size:15px">京东<br>/<br>天猫<br>5800<br>官网<br>4100<br>终端价<br>4000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="align-middle bg-primary text-white opacity" style="width:3%">推荐</th>
+                            <td class="align-middle" style="font-size:15px">适合<br>所有打鼾者<br>更好舒适性</td>
+                            <td class="align-middle" style="font-size:15px">性价<br>比高<br>自动<br>调压</td>
+                            <td class="align-middle" style="font-size:15px">自动调压，国产价格<br>进口品质，原厂采购</td>
+                            <td class="align-middle" style="font-size:15px">老牌<br>经典</td>
+                            <td class="align-middle" style="font-size:15px">国产优质品牌</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="align-middle bg-primary text-white opacity" style="width:3%">模式</th>
+                            <td class="align-middle" style="font-size:15px">单水平<br><a href="#" title="什么是全自动？" data-toggle="popover" data-trigger="hover" data-content="全自动指的是智能识别气道塌陷程度，自动调节压力。<br>呼吸机通过传感器探测气道的塌陷程度，如果塌陷严重就调高风压，如果没有塌陷就调低风压。总是用一个比较舒适的风压维持气道的开放。" data-html="true">全自动</a></td>
+                            <td class="align-middle" style="font-size:15px">单水平<br>半自动</td>
+                            <td class="align-middle" style="font-size:15px">单水平<br>半自动</td>
+                            <td class="align-middle" style="font-size:15px">单水平<br>全自动</td>
+                            <td class="align-middle" style="font-size:15px">单水平<br>全自动</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="align-middle bg-primary text-white opacity" style="width:3%">压力</th>
+                            <td class="align-middle" style="font-size:14px"><a href="#" title="什么是CPAP？" data-toggle="popover" data-trigger="hover" data-content="CPAP指的是持续正压通气。<br>呼吸机提供一个恒定的风压，这个风压能够维持气道开放，减少呼吸暂停的发生。" data-html="true">CPAP</a><br>Auto Set</td>
+                            <td class="align-middle" style="font-size:14px">CPAP<br><a href="#" title="什么是APCP？" data-toggle="popover" data-trigger="hover" data-content="APAP指的是自动调压" data-html="true">APAP</a></td>
+                            <td class="align-middle" style="font-size:14px">CPAP</td>
+                            <td class="align-middle" style="font-size:14px">CPAP</td>
+                            <td class="align-middle" style="font-size:14px">CPAP</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="align-middle bg-primary text-white opacity" style="width:3%">声音</th>
+                            <td class="align-middle" style="font-size:15px"><a href="#" title="20-30分贝" data-toggle="popover" data-trigger="hover" data-content="安静，清风吹拂窗帘<br>让您安心睡眠，不扰家人" data-html="true">噪音&#60 24分⻉</a></td>
+                            <td class="align-middle" style="font-size:15px">噪音&#60 24分⻉</td>
+                            <td class="align-middle" style="font-size:15px">噪⾳&#60 30分⻉</td>
+                            <td class="align-middle" style="font-size:15px">噪⾳&#60 30分⻉</td>
+                            <td class="align-middle" style="font-size:15px">噪⾳&#60 28分⻉</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="align-middle bg-primary text-white opacity" style="width:3%">舒适</th>
+                            <td class="align-middle" style="font-size:15px">舒适</td>
+                            <td class="align-middle" style="font-size:15px">正常</td>
+                            <td class="align-middle" style="font-size:15px">正常</td>
+                            <td class="align-middle" style="font-size:15px">舒适</td>
+                            <td class="align-middle" style="font-size:15px">正常</td>
+                        </tr>
+                    </tbody>
+                </table> 
+            </div>  
+        </div>
+        
+<!--其他产品对比--> 
+        <!--
+        <div class="mx-auto pt-5"  style="width:280px">
+            <h3 class="d-block center text-white bg-primary opacity rounded p-2">优质产品，更多推荐</h3>
+            <p class="center text-muted"><em>点击产品大图 <br>查看单品详细信息</em></p><br>
+        </div>
+        <div class="container">
+            <table class="table table-bordered center">
+                <tbody>
+                    <tr>
+                        <th scope="row" class="align-middle" style="width:6%">产品图片</th> -->
+                    <!--瑞思迈S8呼吸机 VPAP IV ST-->
+                    <!--
+                        <td style="width:18.8%">
+                            <img id="im-l-1" class="card-img-top" src="breath-machine-image/resmed-S8-VPAP-IV-ST-1.jpg"  alt="Card image cap">  
+                            <img id="im-l-2" class="card-img-top d-none" src="breath-machine-image/resmed-S9-Auto-Set-2.png" alt="Card image cap">
+                            <div class="container text-center my-3">
+                                <div class="row mx-auto my-auto w-100 no-gutters">
+                                    <div id="img-sm-1" class="col-3">
+                                        <img class="d-block img-fluid" src="breath-machine-image/resmed-S8-VPAP-IV-ST-1-sm.jpg">
+                                    </div>
+                                    <div id="img-sm-2" class="col-3">
+                                        <img class="d-block img-fluid" src="breath-machine-image/resmed-S8-VPAP-IV-ST-2-sm.jpg">       
+                                    </div> 
+                                    <div class="col-3">
+                                        <img class="d-block img-fluid" src="breath-machine-image/resmed-S8-VPAP-IV-ST-3-sm.jpg">
+                                    </div>
+                                    <div class="col-3">
+                                        <img class="d-block img-fluid" src="breath-machine-image/resmed-S8-VPAP-IV-ST-4-sm.jpg">
+                                    </div>
+                                </div>                                    
+                            </div> 
+                        </td> -->
+                    <!--S9 Escape Auto-->
+        <!--
+                        <td style="width:18.8%">
+                            <img id="im-l-1" class="card-img-top" src="breath-machine-image/resmed-S9-Escape-Auto-1.jpg"  alt="Card image cap">  
+                            <img id="im-l-2" class="card-img-top d-none" src="breath-machine-image/resmed-S9-Auto-Set-2.png" alt="Card image cap">
+                            <div class="container text-center my-3">
+                                <div class="row mx-auto my-auto w-100 no-gutters">
+                                    <div id="img-sm-1" class="col-3">
+                                        <img class="d-block img-fluid" src="breath-machine-image/resmed-S9-Escape-Auto-1-sm.jpg">
+                                    </div>
+                                    <div id="img-sm-2" class="col-3">
+                                        <img class="d-block img-fluid" src="breath-machine-image/resmed-S9-Escape-Auto-2-sm.jpg">       
+                                    </div> 
+                                    <div class="col-3">
+                                        <img class="d-block img-fluid" src="breath-machine-image/resmed-S9-Escape-Auto-3-sm.jpg">
+                                    </div>
+                                    <div class="col-3">
+                                        <img class="d-block img-fluid" src="breath-machine-image/resmed-S9-Escape-Auto-5-sm.jpg">
+                                    </div>
+                                </div>                                    
+                            </div> 
+                        </td> -->
+                    <!--uwish-->
+        <!--
+                        <td style="width:18.8%">
+                            <img class="card-img-top w-100" src="breath-machine-image/uwish-1.jpeg"  alt="uwish">  
+                            <div class="container text-center my-3">
+                                <div class="row no-gutters">
+                                    <div class="col-3">
+                                        <img class="d-block w-100 img-fluid" src="breath-machine-image/uwish-1-sm.jpg">
+                                    </div>
+                                    <div class="col-3">
+                                        <img class="d-block w-100 img-fluid" src="breath-machine-image/uwish-2-sm.jpg">       
+                                    </div> 
+                                    <div class="col-3">
+                                        <img class="d-block w-100 img-fluid" src="breath-machine-image/uwish-3-sm.jpg">
+                                    </div>
+                                    <div class="col-3">
+                                        <img class="d-block w-100 img-fluid" src="breath-machine-image/uwish-4-sm.jpg">
+                                    </div>
+                                </div>                                    
+                            </div> 
+                        </td> -->
+                    <!--futong-->
+        <!--
+                        <td style="width:18.8%">
+                            <img class="card-img-top w-100" src="breath-machine-image/futong-1.jpg"  alt="futong">  
+                            <div class="container text-center my-3">
+                                <div class="row no-gutters">
+                                    <div class="col-3">
+                                        <img class="d-block w-100 img-fluid" src="breath-machine-image/futong-1-sm.jpg">
+                                    </div>
+                                    <div class="col-3">
+                                        <img class="d-block w-100 img-fluid" src="breath-machine-image/futong-2-sm.jpg">       
+                                    </div> 
+                                    <div class="col-3">
+                                        <img class="d-block w-100 img-fluid" src="breath-machine-image/futong-3-sm.jpg">
+                                    </div>
+                                    <div class="col-3">
+                                        <img class="d-block w-100 img-fluid" src="breath-machine-image/futong-4-sm.jpg">
+                                    </div>
+                                </div>                                    
+                            </div> 
+                        </td> -->
+                    <!--yuyue-->
+        <!--
+                        <td style="width:18.8%">
+                            <img class="card-img-top w-100" src="breath-machine-image/YH-580-1.jpg"  alt="futong">  
+                            <div class="container text-center my-3">
+                                <div class="row no-gutters">
+                                    <div class="col-3">
+                                        <img class="d-block w-100 img-fluid" src="breath-machine-image/YH-580-1-sm.jpg">
+                                    </div>
+                                    <div class="col-3">
+                                        <img class="d-block w-100 img-fluid" src="breath-machine-image/YH-580-2-sm.jpg">       
+                                    </div> 
+                                    <div class="col-3">
+                                        <img class="d-block w-100 img-fluid" src="breath-machine-image/YH-580-3-sm.jpg">
+                                    </div>
+                                    <div class="col-3">
+                                        <img class="d-block w-100 img-fluid" src="breath-machine-image/YH-580-4-sm.jpg">
+                                    </div>
+                                </div>                                    
+                            </div> 
+                        </td>
+                    </tr>
+              
+                    <tr>
+                        <th scope="row" class="align-middle" style="width:6%">品牌</th>
+                        <th scope="col" class="align-middle">Resmed 瑞思迈</th>
+                        <th scope="col" class="align-middle">Resmed 瑞思迈</th>
+                        <th scope="col" class="align-middle">优伟</th>
+                        <th scope="col" class="align-middle">福通</th>
+                        <th scope="col" class="align-middle">鱼跃</th>
+                    </tr>
+
+                    <tr>
+                        <th scope="row" class="align-middle" style="width:6%">型号</th>
+                        <td class="align-middle">S8 VPAP IV ST</td>
+                        <td class="align-middle">S9 Escape Auto</td>
+                        <td class="align-middle">CP1</td>
+                        
+    
+                        <td class="align-middle">APAP Auto</td>
+                        <td class="align-middle">YH-580</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="align-middle" style="width:6%">产地</th>
+                        <td class="align-middle">澳大利亚</td>
+                        <td class="align-middle">澳大利亚</td>
+                        <td class="align-middle">台湾</td>
+                        <td class="align-middle">德国</td>
+                        <td class="align-middle">中国</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="align-middle" style="width:6%">推荐选择</th>
+                        <td class="align-middle">所有打鼾者<br>更好舒适性</td>
+                        <td class="align-middle">性价比高<br>自动调压</td>
+                        <td class="align-middle">自动调压，国产价格<br>进口品质，原厂采购</td>
+                        <td class="align-middle">老牌经典</td>
+                        <td class="align-middle">国产优质品牌</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="align-middle" style="width:6%">运行声音</th>
+                        <td class="align-middle"><a href="#" title="20-30分贝" data-toggle="popover" data-trigger="hover" data-content="安静，清风吹拂窗帘">噪音&#60 24分⻉</a></td>
+                        <td class="align-middle">噪音&#60 24分⻉</td>
+                        <td class="align-middle">噪⾳&#60 30分⻉</td>
+                        <td class="align-middle">噪⾳&#60 30分⻉</td>
+                        <td class="align-middle">噪⾳&#60 28分⻉</td>
+                    </tr>
+                </tbody>
+            </table> 
+        
+        </div>  -->      
+        
+<!--分割图片-->
+        <div class="bgimg d-none d-md-block mt-5" style="width:100%;height:400px">
+            <div class="display-middle">
+                <span class="xxlarge text-white letter-spacing">服务保障</span> 
+            </div>
+        </div>
+        
+<!--mobile-分割图片-->  
+        <div class="mx-auto"  style="width:150px">
+            <h4 class="d-block d-md-none center text-white bg-primary opacity rounded p-2">服务保障</h4>
+        </div>
+        
+<!--PC-服务保障-->
+        <div class="container text-center padding-64 d-none d-md-block">   
+            <div class="row">
+                <div class="col-sm-4">
+                    <a data-fancybox data-type="iframe" data-src="contact.html" href="javascript:;">
+                        <div class="border border-primary rounded-circle mx-auto text-white bg-primary opacity hover-gray" style="width:53px;height:53px">
+                            <h2 class="d-block">
+                                <i class="fas fa-award align-middle pt-1"></i>
+                            </h2>
+                        </div>
+                    </a>
+                    <h4 class="pt-2">7天免费试用，点图申请</h4> 
+                </div>
+                <div class="col-sm-4">
+                    <div class="border border-primary rounded-circle mx-auto text-white bg-primary opacity" style="width:53px;height:53px"><h2 class="d-block"><i class="fas fa-exchange-alt align-middle pt-1"></i></h2></div>
+                    <h4 class="pt-2">30天退换货</h4>
+                </div>
+                <div class="col-sm-4">
+                    <div class="border border-primary rounded-circle mx-auto text-white bg-primary opacity" style="width:53px;height:53px"><h2 class="d-block"><i class="fas fa-receipt align-middle pt-1"></i></h2></div>
+                    <h4 class="pt-2">正规机打发票</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="border border-primary rounded-circle mx-auto text-white bg-primary opacity" style="width:53px;height:53px"><h2 class="d-block"><i class="fas fa-shuttle-van align-middle pt-1"></i></h2></div>
+                    <h4 class="pt-2">顺丰速运，送运费险</h4>
+                </div>
+                <div class="col-sm-4">
+                    <div class="border border-primary rounded-circle mx-auto text-white bg-primary opacity" style="width:53px;height:53px"><h2 class="d-block"><i class="fas fa-user-friends align-middle pt-1"></i></h2></div>
+                    <h4 class="pt-2">工程师上门验配</h4>
+                </div>
+                <div class="col-sm-4">
+                    <div class="border border-primary rounded-circle mx-auto text-white bg-primary opacity" style="width:53px;height:53px"><h2 class="d-block"><i class="fas fa-headphones align-middle pt-1"></i></h2></div>
+                    <h4 class="pt-2">电话视频全程指导使用</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="border border-primary rounded-circle mx-auto text-white bg-primary opacity" style="width:53px;height:53px"><h2 class="d-block"><i class="fas fa-shield-alt align-middle pt-1"></i></h2></div>
+                    <h4 class="pt-2">两年质保，终生售后</h4> 
+                </div>
+                <div class="col-sm-4">
+                    <div class="border border-primary rounded-circle mx-auto text-white bg-primary opacity" style="width:53px;height:53px"><h2 class="d-block"><i class="fas fa-sync-alt align-middle pt-1"></i></h2></div>
+                    <h4 class="pt-2">终生提供备用机</h4>
+                </div>
+                <div class="col-sm-4">
+                    <div class="border border-primary rounded-circle mx-auto text-white bg-primary opacity" style="width:53px;height:53px"><h2 class="d-block"><i class="fas fa-laptop align-middle pt-1"></i></h2></div>
+                    <h4 class="pt-2">机器保养，数据分析</h4>
+                </div>
+            </div>
+        </div>
+        <div class="d-none d-md-block">
+            <div class="mx-auto"  style="width:150px">
+                <h3 class="d-block center text-white bg-primary opacity rounded p-2">为您赠送</h3>
+            </div>
+            <div class="container text-center padding-64 d-none d-md-block">   
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div><img src="breath-machine-image/prize-mask.jpg" class="border border-primary rounded-circle"  style="width:120px;height:120px"></div>
+                        <h4 class="pt-2">面罩/鼻罩</h4> 
+                    </div>
+                    <div class="col-sm-3">
+                        <div><img src="breath-machine-image/prize-cotton.jpg" class="border border-primary rounded-circle"  style="width:120px;height:120px"></div>
+                        <h4 class="pt-2">过滤棉</h4> 
+                    </div>
+                    <div class="col-sm-2">
+                        <div><img src="breath-machine-image/prize-clean.jpg" class="border border-primary rounded-circle"  style="width:120px;height:120px"></div>
+                        <h4 class="pt-2">消毒宝</h4> 
+                    </div>
+                    <div class="col-sm-3">
+                        <div><img src="breath-machine-image/prize-tube.jpg" class="border border-primary rounded-circle"  style="width:120px;height:120px"></div>
+                        <h4 class="pt-2">新款管路</h4> 
+                    </div>
+                    <div class="col-sm-2">
+                        <div><img src="breath-machine-image/prize-bloodpressure.jpg" class="border border-primary rounded-circle"  style="width:120px;height:120px"></div>
+                        <h4 class="pt-2">血压计</h4> 
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+<!--mobile-服务保障-->
+<div class="container text-center pt-4 d-block d-md-none">   
+            <div class="row">
+                <div class="col-4">
+                    <a data-fancybox data-type="iframe" data-src="contact.html" href="javascript:;">
+                        <div class="border border-primary rounded-circle mx-auto text-white bg-primary opacity hover-gray" style="width:53px;height:53px">
+                            <h2 class="d-block">
+                                <i class="fas fa-award align-middle pt-1"></i>
+                            </h2>
+                        </div>
+                    </a>
+                    <h5 class="pt-2"><small>7天免费试用<br>点图申请</small></h5>
+                </div>
+                <div class="col-4">
+                    <div class="border border-primary rounded-circle mx-auto text-white bg-primary opacity" style="width:53px;height:53px"><h2 class="d-block"><i class="fas fa-exchange-alt align-middle pt-1"></i></h2></div>
+                    <h5 class="pt-2"><small>30天<br>退换货</small></h5>
+                </div>
+                <div class="col-4">
+                    <div class="border border-primary rounded-circle mx-auto text-white bg-primary opacity" style="width:53px;height:53px"><h2 class="d-block"><i class="fas fa-receipt align-middle pt-1"></i></h2></div>
+                    <h5 class="pt-2"><small>正规<br>机打发票</small></h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="border border-primary rounded-circle mx-auto text-white bg-primary opacity" style="width:53px;height:53px"><h2 class="d-block"><i class="fas fa-shuttle-van align-middle pt-1"></i></h2></div>
+                    <h5 class="pt-2"><small>顺丰速运<br>送运费险</small></h5>
+                </div>
+                <div class="col-4">
+                    <div class="border border-primary rounded-circle mx-auto text-white bg-primary opacity" style="width:53px;height:53px"><h2 class="d-block"><i class="fas fa-user-friends align-middle pt-1"></i></h2></div>
+                    <h5 class="pt-2"><small>工程师<br>上门验配</small></h5>
+                </div>
+                <div class="col-4">
+                    <div class="border border-primary rounded-circle mx-auto text-white bg-primary opacity" style="width:53px;height:53px"><h2 class="d-block"><i class="fas fa-headphones align-middle pt-1"></i></h2></div>
+                    <h5 class="pt-2"><small>电话视频全程<br>指导使用</small></h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="border border-primary rounded-circle mx-auto text-white bg-primary opacity" style="width:53px;height:53px"><h2 class="d-block"><i class="fas fa-shield-alt align-middle pt-1"></i></h2></div>
+                    <h5 class="pt-2"><small>两年质保<br>终生售后</small></h5> 
+                </div>
+                <div class="col-4">
+                    <div class="border border-primary rounded-circle mx-auto text-white bg-primary opacity" style="width:53px;height:53px"><h2 class="d-block"><i class="fas fa-sync-alt align-middle pt-1"></i></h2></div>
+                    <h5 class="pt-2"><small>终生提供<br>备用机</small></h5>
+                </div>
+                <div class="col-4">
+                    <div class="border border-primary rounded-circle mx-auto text-white bg-primary opacity" style="width:53px;height:53px"><h2 class="d-block"><i class="fas fa-laptop align-middle pt-1"></i></h2></div>
+                    <h5 class="pt-2"><small>机器保养<br>数据分析</small></h5>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="mx-auto pt-4 d-block d-md-none"  style="width:150px">
+                <h4 class="d-block center text-white bg-primary opacity rounded p-2">为您赠送</h4>
+            </div>
+            <div class="container text-center pt-4 d-block d-md-none">   
+                <div class="row">
+                    <div class="col-6">
+                        <div><img src="breath-machine-image/prize-mask.jpg" class="border border-primary rounded-circle"  style="width:100px;height:100px"></div>
+                        <h5 class="pt-2"><small>面罩/鼻罩</small></h5> 
+                    </div>
+                    <div class="col-6">
+                        <div><img src="breath-machine-image/prize-tube.jpg" class="border border-primary rounded-circle"  style="width:100px;height:100px"></div>
+                        <h5 class="pt-2"><small>新款管路</small></h5> 
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <div><img src="breath-machine-image/prize-clean.jpg" class="border border-primary rounded-circle"  style="width:100px;height:100px"></div>
+                        <h5 class="pt-2"><small>消毒宝</small></h5>  
+                    </div>
+                    <div class="col-4">
+                        <div><img src="breath-machine-image/prize-cotton.jpg" class="border border-primary rounded-circle"  style="width:100px;height:100px"></div>
+                        <h5 class="pt-2"><small>过滤棉</small></h5>  
+                    </div>
+                    <div class="col-4">
+                        <div><img src="breath-machine-image/prize-bloodpressure.jpg" class="border border-primary rounded-circle"  style="width:100px;height:100px"></div>
+                        <h5 class="pt-2"><small>血压计</small></h5>  
+                    </div>
+                </div>
+            </div>    
+        </div>
+
+<!--PC-footer-->   
+        <footer class="text-center opacity hover-opacity-off d-none d-md-block" style="max-width:100%;height:300px;background-color: black;padding-top:95px">
+
+            <a href="#carouselExampleIndicators"><button type="button" class="btn btn-sm"><i class="fa fa-arrow-up"></i> To the top</button></a>   
+
+            <p class="text-white p-3">
+                <i class="fab fa-weixin"></i>
+                <i class="fas fa-mobile-alt"></i><br>
+                Powerd by Jia
+            </p>
+
+        </footer>
+
+<!--Mobile-footer-->   
+        <footer class="text-center opacity hover-opacity-off d-block d-md-none" style="max-width:100%;height:200px;background-color: black;padding-top:50px">
+
+            <a href="#carouselExampleIndicators"><button type="button" class="btn btn-sm"><i class="fa fa-arrow-up"></i> To the top</button></a>   
+  
+
+            <p class="text-white p-3">
+                <i class="fab fa-weixin"></i>
+                <i class="fas fa-mobile-alt"></i><br>
+                Powerd by Jia
+            </p>
+
+        </footer>
+
+        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</body>
+    
+        
+        <script>
+    
+        
+        
+//hot to remove gradually?
+        setTimeout(function(){
+            
+            $('#welcome').remove();
+            
+        },3000);
+       
+//Multiple Item Carousel
+            
+        $('#recipeCarousel1, #recipeCarousel2, #recipeCarousel3').carousel({
+            interval: 3000
+        })
+            
+//Multiple Item Carousel, advance one slide at a time 
+                 
+        $('.carousel .carousel-item').each(function(){
+            var next = $(this).next();
+            if (!next.length) {
+            next = $(this).siblings(':first');
+            }
+            next.children(':first-child').clone().appendTo($(this));
+
+            for (var i=0;i<2;i++) {
+                next=next.next();
+                if (!next.length) {
+                    next = $(this).siblings(':first');
+                }
+
+                next.children(':first-child').clone().appendTo($(this));
+              }
+        });
+            
+ //hover small pictures and show the big pictures
+ 
+ //hoverable popover: explanation of jargon            
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover();   
+        });
+            
+ //
+    
+    </script>
+    
+   
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
